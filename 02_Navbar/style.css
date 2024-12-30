@@ -1,21 +1,87 @@
+body{
+    background-color: black;
+}
+
+h2{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .navbar1 ul{
-    text-decoration: underline;
+    display: flex;
+    list-style-type: none;
+    border: 2px solid black;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+}
+
+.navbar1 button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
 
 .navbar2 ul{
-    text-decoration: underline;
+display: flex;
+    list-style-type: none;
+    border: 2px solid black;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
 }
 
-.navbar3{
-    text-decoration: underline;
+.navbar2 button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar3 ul{
+    display: flex;
+    list-style-type: none;
+    border: 2px solid black;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
    
 }
 
-.navbar3 div{
-opacity: 0;
-display: flex;
-
+.navbar3 button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
-.navbar3 li:nth-child(2):hover ~ div{
-    opacity: 1;
+
+.navbar3 ul li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.navbar3 ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5e5e5e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.navbar3 ul li .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+.navbar3 ul li:hover .dropdown-content {
+    display: block;
 }
