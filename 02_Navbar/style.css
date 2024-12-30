@@ -1,0 +1,21 @@
+.navbar1 ul{
+    text-decoration: underline;
+}
+
+.navbar2 ul{
+    text-decoration: underline;
+}
+
+.navbar3{
+    text-decoration: underline;
+   
+}
+
+.navbar3 div{
+opacity: 0;
+display: flex;
+
+}
+.navbar3 li:nth-child(2):hover ~ div{
+    opacity: 1;
+}
